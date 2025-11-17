@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini GitHub Blog</title>
+  <meta name="description" content="A tiny static blog powered by a local JSON database.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">Mini GitHub Blog</a></h1>
+      <p class="site-tag">Static blog demo — no external services</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search posts..." aria-label="Search posts">
+      <select id="sort" aria-label="Sort posts">
+        <option value="newest">Newest first</option>
+        <option value="oldest">Oldest first</option>
+      </select>
+    </section>
+
+    <section id="posts" class="posts-grid" aria-live="polite">
+      <!-- posts injected here -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Made for demo • Host on GitHub Pages</small>
+    </div>
+  </footer>
+
+  <template id="post-card-template">
+    <article class="card">
+      <header>
+        <h2 class=

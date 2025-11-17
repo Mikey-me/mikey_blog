@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "slug": "welcome-to-mini-blog",
+      "title": "Welcome to Mini Blog",
+      "date": "2025-11-01T10:00:00Z",
+      "excerpt": "This is the first demo post — a quick welcome and explanation of how this static blog works.",
+      "tags": ["intro", "demo"],
+      "content_html": "<p>Welcome! This static blog uses a local <code>posts.json</code> file as its database. Each post is stored as JSON and rendered by <code>script.js</code>. This approach keeps everything local and perfect for GitHub Pages.</p><h3>How it works</h3><ul><li>Open <code>index.html</code> to see the list of posts.</li><li>Click a post to open <code>post.html?slug=...</code>.</li><li>No server required — GitHub Pages or any static host will work.</li></ul><p>Enjoy experimenting!</p>"
+    },
+    {
+      "id": "2",
+      "slug": "how-to-extend-this-setup",
+      "title": "How to Extend This Setup",
+      "date": "2025-11-10T08:30:00Z",
+      "excerpt": "Ideas to extend the static blog: add tags, pagination, markdown compilation, or CI to generate posts.",
+      "tags": ["tips", "guide"],
+      "content_html": "<p>Here are a few ways to improve this tiny blog:</p><ol><li><strong>Markdown support</strong>: pre-compile markdown to HTML in your CI or locally and store the HTML in <code>posts.json</code>.</li><li><strong>Tag filters</strong>: add a tag cloud and filter by tag on the client side.</li><li><strong>Comments</strong>: integrate a static commenting solution (e.g. GitHub Issues, staticman) or use a short JSON file for approved comments.</li><li><strong>Search</strong>: for bigger sites, use a tiny prebuilt index (lunr) exported during build.</li></ol><p>Because the content is stored in JSON, you can also write simple scripts to add new posts programmatically.</p>"
+    }
+  ]
+}
