@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Post — Mini GitHub Blog</title>
+  <meta name="description" content="Read a post">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">Mini GitHub Blog</a></h1>
+      <p class="site-tag">Static blog demo</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <article id="post-article" class="post-article" aria-live="polite">
+      <!-- rendered content -->
+      <h2 id="post-title"></h2>
+      <time id="post-date" datetime=""></time>
+      <div id="post-body"></div>
+    </article>
+
+    <p><a href="index.html">← Back to posts</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Made for demo • Host on GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script>
+  // Small inline script to read ?slug= from URL and pass to script.js
+  (function() {
+    const params = new URLSearchParams(location.search);
+    const slug = params.get('slug');
+    // Make slug available to script.js via a global
+    window.__postSlug = slug;
+  })();
+  </script>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
