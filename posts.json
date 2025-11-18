@@ -17,6 +17,15 @@
       "excerpt": "Ideas to extend the static blog: add tags, pagination, markdown compilation, or CI to generate posts.",
       "tags": ["tips", "guide"],
       "content_html": "<p>Here are a few ways to improve this tiny blog:</p><ol><li><strong>Markdown support</strong>: pre-compile markdown to HTML in your CI or locally and store the HTML in <code>posts.json</code>.</li><li><strong>Tag filters</strong>: add a tag cloud and filter by tag on the client side.</li><li><strong>Comments</strong>: integrate a static commenting solution (e.g. GitHub Issues, staticman) or use a short JSON file for approved comments.</li><li><strong>Search</strong>: for bigger sites, use a tiny prebuilt index (lunr) exported during build.</li></ol><p>Because the content is stored in JSON, you can also write simple scripts to add new posts programmatically.</p>"
+    },
+    {
+      "id": "3",
+      "slug": "What it means to test",
+      "title": "What it means to test",
+      "date": "2025-11-10T08:30:00Z",
+      "excerpt": "I am kinda funny I think ",
+      "tags": ["Comedy", "blog"],
+      "content_html": "<p>Here are a few ways to improve this tiny blog:</p><ol><li><strong>Markdown support</strong>: pre-compile markdown to HTML in your CI or locally and store the HTML in <code>posts.json</code>.</li><li><strong>Tag filters</strong>: add a tag cloud and filter by tag on the client side.</li><li><strong>Comments</strong>: integrate a static commenting solution (e.g. GitHub Issues, staticman) or use a short JSON file for approved comments.</li><li><strong>Search</strong>: for bigger sites, use a tiny prebuilt index (lunr) exported during build.</li></ol><p>Because the content is stored in JSON, you can also write simple scripts to add new posts programmatically.</p>"
     }
   ]
 }
